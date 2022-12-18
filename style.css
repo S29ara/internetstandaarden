@@ -15,81 +15,58 @@
 }
 
 
-@media (min-width: 48rem) {
-    h1 {
-        font-size: 5.5em;
-    }
-    h2 {
-        font-size: 2.25em;
-    }
-    p {
-        font-size: 1.5em;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* bron: https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8 */
-
-@media all and (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
-    nav ul li {
-        text-align: center;
-    }
-
-}
 
 body, html {
     margin: 0;
     padding: 0;
 }
 
+
 body { 
-    margin: 0.5em;
-    padding: 0.5em;
+    margin: 0;
+    padding: 0;
     background-color:white;
-    border: #edc5e9 3px solid;
+    border: 5px solid #edc5e9;
 }
 
 header {
     position: sticky;
     top: 0;
-    box-shadow: 0 8px 6px -6px black;
-    /* bron: https://css-tricks.com/almanac/properties/b/box-shadow/*/
-}
+    margin: auto 0;
+    padding: 0;
+    box-shadow: 0 6px 6px -7px black;
 
-.intro {
-border-bottom: black 2px solid;
-padding-bottom: 1em;
-margin-bottom: 2em;
-margin-left: 15vw;
-margin-right: 15vw;
-text-align: center;
+    /* bron box shadow: https://css-tricks.com/almanac/properties/b/box-shadow/ */
 }
-
 
 
 nav {
+    display: block;
     align-items: center;
     justify-content: flex-start;
     background-color:#ffffff;
     padding: 1em;
     margin: 0;
-    overflow: hidden;
-
 }
 
-.logo {
+
+nav p img { /*logo*/
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    width: 150px;
-    max-width: 20%;
+    width: 120px;
+    max-width: 100%;
     height: auto;
     padding-top: 0 auto;
     margin: auto;
+ }
 
-}
 
 nav ul {
     display: flex;
@@ -99,18 +76,12 @@ nav ul {
     
 }
 
-nav ul li {
+
+nav ul li { /*responsive nav bar*/
     cursor: pointer;
-    padding: 1rem;
+    padding: 1em;
     flex: auto;
     text-align: center;
-}
-
-
-ol {
-    font-family: 'Manrope', Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    padding: 0em 5em 0em 5em;
 }
 
 
@@ -124,9 +95,18 @@ li a {
     transition: 350ms ease;
 }
 
-    
 
-li a:hover {
+p a:hover {
+    color:blue;
+}
+
+ 
+p a:visited {
+    color:olivedrab;
+}
+
+
+nav li a:hover {
     color: #d08fca;
     font-size: 1.5em;
     font-weight: 900;
@@ -139,9 +119,7 @@ li a:hover {
 }
 
 
-    
 h1 {
-    display: block;
     text-align: center;
     color:#328b87;
     text-decoration: none;
@@ -149,47 +127,73 @@ h1 {
     font-family: 'futura-pt',sans-serif,Georgia;
     font-weight: 400;
     font-style: normal;
-    padding-top: 20px;
+    padding-top: 0.5em;
     margin: auto;
 }
 
 
 h2 {
-    display: block;
     text-align: center;
     font-family: 'Akkurat-mono', sans-serif;
     font-size: 2em;
     font-weight: 400;
-    margin: auto;
-    padding: 0.5em;
+    margin: 0 auto;
+    padding: 0.5em 0em 0.5em 0em;
+}
+
+
+main>h3:nth-last-of-type(1){
+    border-bottom: #328b87 solid 3px;
+    text-align: center;
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 0 0 1em 0;
+    margin: 0 15vw 2em 15vw;
+}
+
+
+
+h3 {
+    text-align: center;
+    font-weight: 400;
+    font-family: "manrope", Arial;
+    margin: 0.5em 15vw 1em 15vw;
+    font-size: 1.2em;
+    padding: 0 auto;
+}
+
+
+ol {
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding: 1em 5em 1em 5em;
+    margin: 0 auto;
 }
 
 
 p { 
     font-family: 'Manrope', Arial, Helvetica, sans-serif; 
     font-size: 1em;
-    margin: auto;
-    display: block;
-    padding: 0.5em 5em 0.5em 5em;
+    margin: 0.5em 4em 2em 4em;
+    padding: 0 auto; 
 }
 
 
-.paragraaf-container {
+.historycolumns-container {
     columns: 2;
-    column-gap: 0.5em;
-    padding-top: 1em;
+    margin: 1em 0 2em 0;
     column-rule: #328b87 3px solid;
 }
 
-    
 
 img {
     display: flex;
     align-items: center;
     justify-content: center;
     height: auto;
-    width: 60%;
-    max-width: 80%;
+    width: 500px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -201,7 +205,173 @@ figcaption {
 }
 
 
-footer {
-    font-family: 'Manrope', Arial, Helvetica, sans-serif;
-    margin: 2em 2em;
+footer p {
+    font-size: 0.7em;
+    text-align: center;
+    padding: 2em;
+    margin:0;
+    margin-bottom: 0;
+    background-color: #edc5e9;
+    max-width: 100%;
+    
+}
+
+/*Japanese cities images bron:https://nl.pinterest.com/search/pins/?q=japan&rs=typed */
+ol p img{
+
+    width: 220px;
+    height: auto;
+    max-width: 90%;
+    padding: 0 auto;
+    margin-top: 2em;
+    box-shadow: 0px 4px 6px -3px #328b87;
+    transition: 200ms ease;
+}
+
+
+ol a img:hover {
+    width: 35%;
+}
+
+
+/*inspiratie bron: https://www.w3docs.com/snippets/css/how-to-style-buttons-with-css.html */
+.wrapping {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #328b87;
+    color: #ffffff;
+    box-shadow: 0 5px 6px -3px black;
+    transition: all 200ms ease;
+}
+
+.wrapping p a {
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 800;
+}
+
+.button:hover{
+    transform: scale(1.1);
+}
+
+
+/*fashion page layout bron:https://www.youtube.com/watch?v=lgX38fNbxmw */
+/*bronnen images: https://nl.pinterest.com/pin/AVLWQtB4BmmyNFk1tuGSLol2284vSuE_xyHArq-oV9h7EXzjSG4v2r0/
+https://nl.pinterest.com/pin/106819822405402635/ https://nl.pinterest.com/pin/806707352022845183/ */
+.container-fashionpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    background-color:#f5e7f3;
+    border-radius: 15px;
+    margin: 0 5em 2em 5em;
+    box-shadow: 0px 6px 5px -4px;
+}
+
+
+article img {
+    display:block;
+    width: 300px;
+    max-width: 100%;
+    float: right;
+    padding: 2em 3em 2em 3em; 
+}
+
+
+.text-fashionpage h4 {
+    font-family: 'manrope', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color:#328b87;
+    font-size: 1.5em; 
+    margin: 0 auto;
+    padding: 1.5em 3em 0.5em 3em;
+}
+
+
+.text-fashionpage p{
+    margin: 0 auto;
+    padding: 0em 3em 2em 4.5em;
+}
+
+
+/*responsive size*/
+@media (max-width: 500px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        text-align: center;
+
+    }
+    header {
+        position: relative;
+    }
+    .historycolumns-container{
+        columns: 1;
+    }
+    ol {
+        font-size: 0.8em;
+       padding-left: 3em;
+       padding-right: 3em;
+    }
+    img {
+        width: 400px;
+    }
+
+    article img {
+        height: auto;
+        width: 250px;
+        padding: 2em 5em 1em 0em;
+    }
+
+    ol p img {
+        width: 200px;
+    }
+
+    ol a img:hover {
+        width: 70%;
+    }    
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+     font-size: 1em;
+    }
+
+    .text-fashionpage h4{
+        font-size: 1.2em;
+
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    main>h3:nth-last-of-type(1) {
+        font-size: 1em;
+    }
+
+    .button {
+        width: 120px;
+    }
+    
 }
