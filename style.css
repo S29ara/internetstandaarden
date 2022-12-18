@@ -143,7 +143,7 @@ h2 {
 }
 
 
-main>h3:nth-last-of-type(1){
+main h3:nth-last-of-type(1){
     border-bottom: #328b87 solid 3px;
     text-align: center;
     font-family: 'Manrope', Arial, Helvetica, sans-serif;
@@ -154,7 +154,6 @@ main>h3:nth-last-of-type(1){
 }
 
 
-
 h3 {
     text-align: center;
     font-weight: 400;
@@ -162,6 +161,16 @@ h3 {
     margin: 0.5em 15vw 1em 15vw;
     font-size: 1.2em;
     padding: 0 auto;
+}
+
+
+h4, h5, h6{
+    font-family: 'manrope', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color:#328b87;
+    font-size: 1.5em; 
+    margin: 0 auto;
+    padding: 1.5em 3em 0.5em 3em;
 }
 
 
@@ -326,16 +335,6 @@ article img {
 }
 
 
-.text-fashionpage h4 {
-    font-family: 'manrope', Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    color:#328b87;
-    font-size: 1.5em; 
-    margin: 0 auto;
-    padding: 1.5em 3em 0.5em 3em;
-}
-
-
 .text-fashionpage p{
     margin: 0 auto;
     padding: 0em 3em 2em 4.5em;
@@ -396,7 +395,7 @@ article img {
      font-size: 1em;
     }
 
-    .text-fashionpage h4{
+    h4, h5, h6{
         font-size: 1.2em;
 
     }
