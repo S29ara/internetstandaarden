@@ -36,7 +36,7 @@ body {
 }
 
 
-header {
+ .nav-bar {
     position: sticky;
     top: 0;
     margin: auto 0;
@@ -64,7 +64,7 @@ nav p img { /*logo*/
     width: 120px;
     max-width: 100%;
     height: auto;
-    padding-top: 0 auto;
+    padding-top: 0;
     margin: auto;
  }
 
@@ -128,45 +128,44 @@ h1 {
     font-family: 'futura-pt',sans-serif,Georgia;
     font-weight: 400;
     font-style: normal;
-    padding-top: 0.5em;
+    padding: 0.5em 0em 0.2em 0em;
     margin: auto;
 }
 
 
 h2 {
     text-align: center;
-    font-family: 'Akkurat-mono', sans-serif;
-    font-size: 2em;
     font-weight: 400;
-    margin: 0 auto;
-    padding: 0.5em 0em 0.5em 0em;
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    padding: 0em 0em 1em 0em;
+    margin: 0vw 15vw 0vw 15vw;
+
 }
 
 
-main h3:nth-last-of-type(1){
+header h2:nth-last-of-type(1){
     border-bottom: #328b87 solid 3px;
     text-align: center;
     font-family: 'Manrope', Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     font-weight: 400;
-    padding: 0 0 1em 0;
+    padding: 0em 0 1em 0;
     margin: 0 15vw 2em 15vw;
 }
-
 
 h3 {
     text-align: center;
     font-weight: 400;
-    font-family: "manrope", Arial;
+    font-family: "Akkurat-mono", Arial;
     margin: 0.5em 15vw 1em 15vw;
-    font-size: 1.2em;
-    padding: 0 auto;
+    font-size: 1.6em;
+    padding: 0;
 }
 
-
-h4, h5, h6{
+h4{
     font-family: 'manrope', Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     color:#328b87;
     font-size: 1.5em; 
     margin: 0 auto;
@@ -186,7 +185,7 @@ p {
     font-family: 'Manrope', Arial, Helvetica, sans-serif; 
     font-size: 1em;
     margin: 0.5em 4em 2em 4em;
-    padding: 0 auto; 
+    padding: 0; 
 }
 
 
@@ -194,6 +193,14 @@ p {
     columns: 2;
     margin: 1em 0 2em 0;
     column-rule: #328b87 3px solid;
+}
+
+.historycolumns-container h2 {
+    font-family: 'Akkurat-mono',Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0em 2.7em 0.5em 2.7em;
 }
 
 
@@ -207,6 +214,8 @@ img {
     margin: 0 auto;
 }
 
+
+
 figcaption { 
     font-family: 'Manrope', sans-serif;
     text-align: center;
@@ -216,36 +225,37 @@ figcaption {
 
 .imagegallery {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 0.5em;
-    padding: 0 0.5em 0 0.5em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 0em 0.5em 0em 0.5em;
+    margin: 0;
     overflow: hidden;
 }
 
 
 .imagegallery img {
     display: block;
-    width: 70%;
-    height: 70%;
+    width: 60%;
+    height: 60%;
     object-fit: cover;
     padding: 0;
-    margin-top: 0.5em;
-    transition: 300ms ease-in;
+    margin-top: 0;
+    transition: 200ms ease-in;
 
 }
 
 .imagegallery a {
     text-align: center;
+    font-weight: 400;
     text-decoration: none;
     font-family: 'manrope', Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #328b87;
 }
 
 
 .imagegallery img:hover {
-    width: 75%;
+    width: 65%;
 }
 
 
@@ -261,20 +271,19 @@ footer p {
 }
 
 /*Japanese cities images bron:https://nl.pinterest.com/search/pins/?q=japan&rs=typed */
-ol p img{
-
-    width: 220px;
+ol img{
+    width: 250px;
     height: auto;
     max-width: 90%;
-    padding: 0 auto;
-    margin-top: 2em;
-    box-shadow: 0px 4px 6px -3px #328b87;
-    transition: 300ms ease-in;
+    padding: 0;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    box-shadow: 0px 5px 6px -3px #328b87;
+    transition: 250ms ease-in;
 }
 
-
-ol a img:hover {
-    width: 250px;
+ol a img:hover{
+    width: 35%;
 }
 
 
@@ -315,29 +324,28 @@ ol a img:hover {
 /*bronnen images: https://nl.pinterest.com/pin/AVLWQtB4BmmyNFk1tuGSLol2284vSuE_xyHArq-oV9h7EXzjSG4v2r0/
 https://nl.pinterest.com/pin/106819822405402635/ https://nl.pinterest.com/pin/806707352022845183/ */
 .container-fashionpage {
-    display: flex;
-    justify-content: center;
+    display: table;
     align-items: center;
-    min-height: auto;
     background-color:#f5e7f3;
     border-radius: 15px;
-    margin: 0 5em 2em 5em;
+    padding: 1em 1em 1em 3em;
+    margin: 2em;
     box-shadow: 0px 6px 5px -4px;
 }
 
 
-article img {
-    display:block;
-    width: 300px;
-    max-width: 100%;
+.container-fashionpage img {
+    display: inline;
     float: right;
-    padding: 2em 3em 2em 3em; 
+    padding: 1em 1em 1em 1em;
+    margin: 0em 1em 0 1em;
+    width: 300px;
 }
 
-
-.text-fashionpage p{
-    margin: 0 auto;
-    padding: 0em 3em 2em 4.5em;
+.container-fashionpage p, h4 {
+    text-align: left;
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 0;
 }
 
 
@@ -350,14 +358,20 @@ article img {
         text-align: center;
 
     }
-    header {
+    .nav-bar {
         position: relative;
     }
     .historycolumns-container{
         columns: 1;
     }
+
+    .historycolumns-container h2 {
+        font-size: 1.2em;
+        margin: 0 0 0 3em;
+    }
+
     ol {
-        font-size: 0.8em;
+        font-size: 0.9em;
        padding-left: 3em;
        padding-right: 3em;
     }
@@ -365,18 +379,25 @@ article img {
         width: 400px;
     }
 
-    article img {
-        height: auto;
-        width: 250px;
-        padding: 2em 5em 1em 0em;
+    .container-fashionpage{
+        padding-bottom: 2em;
     }
 
-    ol p img {
+
+    .container-fashionpage img {
+        height: auto;
+        width: 250px;
+        padding: 0.5em 0.5em 1em 0.5em;
+        margin: 0em 4.5em 0em 4em;
+    }
+
+    ol img {
         width: 200px;
+        transition: 200ms ease-in-out;
     }
 
     ol a img:hover {
-        width: 70%;
+        width: 55%;
     }    
 
     .imagegallery a {
@@ -388,23 +409,23 @@ article img {
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 1em;
     }
     
     h3 {
-     font-size: 1em;
+     font-size: 1.2em;
     }
 
-    h4, h5, h6{
+    h4 {
         font-size: 1.2em;
-
+        margin: 0;
     }
 
     p {
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
 
-    main>h3:nth-last-of-type(1) {
+    header h2:nth-last-of-type(1) {
         font-size: 1em;
     }
 
