@@ -226,7 +226,7 @@ figcaption {
     padding-bottom: 1em;
 }
 
-
+/*inspiratie bron: https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/ */
 .imagegallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -291,7 +291,7 @@ ol a img:hover{
 }
 
 
-/*inspiratie bron: https://www.w3docs.com/snippets/css/how-to-style-buttons-with-css.html */
+/*inspiratie bron button: https://www.w3docs.com/snippets/css/how-to-style-buttons-with-css.html */
 .wrapping {
     display: block;
     text-align: center;
