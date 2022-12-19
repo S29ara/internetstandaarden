@@ -203,6 +203,10 @@ p {
     margin: 0em 2.7em 0.5em 2.7em;
 }
 
+.historycolumns-container hr {
+    border-style: none;
+}
+
 
 img {
     display: flex;
